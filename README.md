@@ -1,24 +1,12 @@
-# README
+# Emily's Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was made for the purpose of housing my own blog. Since I learned Ruby, the most obvious use case for me is a blog. I wanted visitors to be able to visit my website and be linked to my blog, and I knew I could build such a thing, so I did.
 
-Things you may want to cover:
+## How to Start this project (even though it's hosted on herokuapp)
 
-* Ruby version
+run $ bundle install
+run $ rails s
 
-* System dependencies
+navigate to http://localhost:3000/ on your browser.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Or just visit it at https://emily-jennings-blog.herokuapp.com/
