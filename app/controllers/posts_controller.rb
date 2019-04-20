@@ -1,3 +1,5 @@
+require 'pry'
+
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
@@ -15,6 +17,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    @user = current_user
   end
 
   # GET /posts/1/edit
@@ -24,7 +27,9 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = Post.create!(post_params)
+    @post.user_id = current_user.id
+    binding.pry
 
     respond_to do |format|
       if @post.save
