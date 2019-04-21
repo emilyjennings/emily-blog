@@ -13,3 +13,203 @@
  *= require_tree .
  *= require_self
  */
+ * {
+    box-sizing: border-box;
+  }
+
+  body {
+    color: #E3F3F3;
+    font-family: Georgia, serif;
+    background: #3B4548;
+    background-position: top;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    line-height: normal;
+  }
+
+  .blogtitle {
+    display: block;
+    text-align: center;
+    width: 50%;
+    background-color: #23C6B3;
+    opacity: 0.9;
+    border-radius: 5px 5px 5px 5px;
+    margin: 90px 100px 80px 100px;
+    padding: 30px;
+    font-size: 40px;
+    color: #3B4548;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  h3 {
+    font-size: 50px;
+  }
+
+  p {
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 10px solid #23C6B3;
+    border-radius: 18px;
+    background: #C4EFDA;
+    font-size: 18px;
+    padding: 20px;
+    letter-spacing: .5px;
+    color: #747E7A;
+    text-indent: 30px;
+    line-height: 23px;
+    font-family: monospace;
+    overflow: none;
+  }
+
+  .blocktitle2 {
+    width: 100%;
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #C4EFDA;
+   margin: 100px 40px;
+  }
+
+  .aboutemilyblock2 {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 10px solid #23C6B3;
+    border-radius: 20px;
+    background: #C4EFDA;
+    font-size: 18px;
+    padding: 20px;
+    letter-spacing: .4px;
+    color: #747E7A;
+    text-indent: 30px;
+    line-height: 30px;
+    font-family: monospace;
+    overflow: scroll;
+  }
+
+  .actionscontainer {
+    display: block;
+    text-align: center;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    padding-top: 0;
+  }
+
+  .actions {
+    display: block;
+    text-align: center;
+    float: left;
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #C4EFDA;
+    margin: 10px;
+  }
+
+  h1#first {
+   display: block;
+   text-align: center;
+   background-color: #23C6B3;
+   opacity: 0.9;
+   border-radius: 5px 5px 5px 5px;
+   margin: 50px 100px 80px 100px;
+   padding: 50px;
+   font-size: 80px;
+   color: #3B4548;
+   font-weight: bold;
+ }
+
+ a:link, a:visited {
+   color: #35CDD1;
+   text-decoration: none;
+ }
+
+ a:hover, nav a:hover {
+   color: #C4EFDA;
+   background: #3B4548;
+ }
+
+ #hamburger {
+   background-color: #3B4548;
+   position: fixed;
+   top: 0;
+   right: 0;
+   border-radius: 5px 5px 5px 5px;
+   margin: 20px;
+   border: 1px solid #35CDD1;
+   line-height: 2.5em;
+   font-family: monospace;
+   font-size: 20px;
+   padding: 1px 13px;
+   opacity: 0.8;
+   color: #C4EFDA;
+   z-index: 100;
+ }
+
+ .nav {
+   overflow: hidden;
+   background-color: #3B4548;
+   position: fixed;
+   top: 0;
+   right: 0;
+   border-radius: 5px 5px 5px 5px;
+   margin: 10px;
+   border: 1px solid #35CDD1;
+   display: block;
+   line-height: 2.5em;
+   font-family: monospace;
+   font-size: 16px;
+   padding: 8px;
+   opacity: 0.8;
+   z-index: 100;
+ }
+
+ .nav a {
+   display: block;
+ }
+
+ #cross {
+   text-decoration: none;
+   font-size: 19px
+ }
+
+ #top {
+   text-align: center;
+   padding: 10px;
+   display: block;
+   margin: 30px auto;
+   font-size: 20px;
+   border: 3px solid #23C6B3;
+   border-radius: 80px;
+   background: #C4EFDA;
+   position: fixed;
+   bottom: 15px;
+   right: 15px;
+   z-index: 100;
+   opacity: 0;
+ }
+
+ .noticemessage {
+   display: block;
+   text-align: center;
+   margin-left: 40px;
+   color: #C4EFDA;
+ }
+
+ .aboutemilyblock a:hover {
+   color: #3B4548;
+ }
+
+ p.alert.alert-success {
+   text-align: center;
+ }
+
+ .clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
