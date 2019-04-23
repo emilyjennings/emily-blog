@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require jquery
 
+//= require_tree .
+
 
 //nav menu animation
 document.addEventListener("turbolinks:load", function() {
