@@ -33,12 +33,11 @@
     width: 50%;
     background-color: #23C6B3;
     opacity: 0.9;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     margin: 10px 25%;
     padding: 30px;
     font-size: 40px;
     color: #e6f7f7;
-    font-weight: bold;
     line-height: normal;
     font-family: 'Righteous', serif
   }
