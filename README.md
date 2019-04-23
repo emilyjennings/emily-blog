@@ -2,6 +2,14 @@
 
 This project was made for the purpose of housing my own blog. Since I learned Ruby, the most obvious use case for me is a blog. I wanted visitors to be able to visit my website and be linked to my blog, and I knew I could build such a thing, so I did.
 
+## Design planning 4/23/19:
+
+The user sees a large blog title and a smaller subtitle above it. below will be links - about tags dates homepage
+
+dropdown nav menu only viewable by admin - login, logout, new post
+
+a small line separates that header from posts which are placed into boxes by date with a preview. User can click on the box to read, and can post a comment.
+
 ## How to Start this project (even though it's hosted on herokuapp)
 
 run $ bundle install
