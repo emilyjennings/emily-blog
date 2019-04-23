@@ -17,43 +17,45 @@
 
 
 //nav menu animation
-
-$(".nav").hide();
-$("#hamburger").click(function(){
-  $(".nav").slideToggle("slow", function(){
-    $("#hamburger").hide();
-    $(".nav").show();
-    $("#cross").show();
-  });
-});
-
-
-$("#cross").click(function(event){
-  event.preventDefault();
-  //click event that takes information from the event and prevents refresh
-  if ($("#cross").is(":visible")){
+document.addEventListener("turbolinks:load", function() {
+  $(".nav").hide();
+  $("#hamburger").click(function(){
     $(".nav").slideToggle("slow", function(){
-      $("#cross").hide();
-      $("#hamburger").show();
+      $("#hamburger").hide();
+      $(".nav").show();
+      $("#cross").show();
     });
-  }
-});
+  });
 
-//scroll to top effect
 
-$("#top").click(function(event){
-  $.scrollTo(0, 1000);
-});
+  $("#cross").click(function(event){
+    event.preventDefault();
+    //click event that takes information from the event and prevents refresh
+    if ($("#cross").is(":visible")){
+      $(".nav").slideToggle("slow", function(){
+        $("#cross").hide();
+        $("#hamburger").show();
+      });
+    }
+  });
 
-$(window).scroll(function(){
-  var scrollTop = $(window).scrollTop()
-  if (scrollTop > 150) {
-    $('#top').animate({
-      opacity: '0.75',
-    }, 700);
-  } else if (scrollTop < 150){
-    $('#top').animate({
-      opacity: '0.0',
-    }, 200);
-  }
+  //scroll to top effect
+
+  $("#top").click(function(event){
+    $.scrollTo(0, 1000);
+  });
+
+  $(window).scroll(function(){
+    var scrollTop = $(window).scrollTop()
+    if (scrollTop > 150) {
+      $('#top').animate({
+        opacity: '0.75',
+      }, 700);
+    } else if (scrollTop < 150){
+      $('#top').animate({
+        opacity: '0.0',
+      }, 200);
+    }
+  });
+
 });
