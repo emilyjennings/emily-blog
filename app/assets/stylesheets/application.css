@@ -19,7 +19,7 @@
 
   body {
     color: #2fd6d6;
-    font-family: Georgia, serif;
+    font-family: 'Bitter', serif;
     background: #e6f7f7;
     background-position: top;
     background-repeat: no-repeat;
@@ -34,16 +34,18 @@
     background-color: #23C6B3;
     opacity: 0.9;
     border-radius: 5px 5px 5px 5px;
-    margin: 90px 100px 80px 100px;
+    margin: 10px 25%;
     padding: 30px;
     font-size: 40px;
-    color: #3B4548;
+    color: #e6f7f7;
     font-weight: bold;
     line-height: normal;
+    font-family: 'Righteous', serif
   }
 
   h3 {
-    font-size: 50px;
+    font-size: 30px;
+    color: #2ec4f2
   }
 
   p {
@@ -51,14 +53,14 @@
     margin-right: 40px;
     border: 10px solid #23C6B3;
     border-radius: 18px;
-    background: #C4EFDA;
+    background: #d1f8fc;
     font-size: 18px;
     padding: 20px;
     letter-spacing: .5px;
     color: #747E7A;
     text-indent: 30px;
     line-height: 23px;
-    font-family: monospace;
+    font-family: 'Bitter', serif;
     overflow: none;
   }
 
@@ -67,27 +69,8 @@
     font-style: italic;
     font-family: Georgia, serif;
     font-size: 20px;
-    color: #C4EFDA;
+    color: #2ec4f2;
     margin: 100px 40px;
-  }
-
-  .aboutemilyblock2 {
-    display: block;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border: 10px solid #23C6B3;
-    border-radius: 20px;
-    background: #C4EFDA;
-    font-size: 18px;
-    padding: 20px;
-    letter-spacing: .4px;
-    color: #747E7A;
-    text-indent: 30px;
-    line-height: 30px;
-    font-family: monospace;
-    overflow: scroll;
   }
 
   .actionscontainer {
@@ -121,31 +104,31 @@
  }
 
  #hamburger {
-   background-color: #3B4548;
+   background-color: #e6f7f7;
    position: fixed;
    top: 0;
    right: 0;
    border-radius: 5px 5px 5px 5px;
    margin: 20px;
-   border: 1px solid #35CDD1;
+   border: 1px solid #2ec4f2;
    line-height: 2.5em;
    font-family: monospace;
    font-size: 20px;
    padding: 1px 13px;
    opacity: 0.8;
-   color: #C4EFDA;
+   color: #2ec4f2;
    z-index: 100;
  }
 
  .nav {
    overflow: hidden;
-   background-color: #3B4548;
+   background-color: #e6f7f7;
    position: fixed;
    top: 0;
    right: 0;
    border-radius: 5px 5px 5px 5px;
    margin: 10px;
-   border: 1px solid #35CDD1;
+   border: 1px solid #2ec4f2;
    display: block;
    line-height: 2.5em;
    font-family: monospace;
