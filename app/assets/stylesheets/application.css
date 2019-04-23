@@ -68,7 +68,7 @@
     font-family: Georgia, serif;
     font-size: 20px;
     color: #C4EFDA;
-   margin: 100px 40px;
+    margin: 100px 40px;
   }
 
   .aboutemilyblock2 {
@@ -109,19 +109,6 @@
     color: #C4EFDA;
     margin: 10px;
   }
-
-  h1#first {
-   display: block;
-   text-align: center;
-   background-color: #23C6B3;
-   opacity: 0.9;
-   border-radius: 5px 5px 5px 5px;
-   margin: 50px 100px 80px 100px;
-   padding: 50px;
-   font-size: 80px;
-   color: #3B4548;
-   font-weight: bold;
- }
 
  a:link, a:visited {
    color: #35CDD1;
@@ -198,6 +185,8 @@
    text-align: center;
    margin-left: 40px;
    color: #C4EFDA;
+   border: none;
+   background-color: none
  }
 
  .aboutemilyblock a:hover {

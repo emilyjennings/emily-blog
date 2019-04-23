@@ -9,13 +9,16 @@ class UsersController < ApplicationController
 
   # GET /users/1
   # GET /users/1.json
+  # Show page for user's dashboard and viewers' profile/about view
   def show
+    @user = current_user
   end
 
   # GET /users/new
-  def new
-    @user = User.new
-  end
+  #Don't need this because only i will be posting
+  # def new
+  #   @user = User.new
+  # end
 
   # GET /users/1/edit
   def edit
@@ -39,6 +42,7 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
+  #Is this useful? No need to update a user's identity
   def update
     respond_to do |format|
       if @user.update(user_params)
@@ -65,6 +69,10 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
+    end
+
+    def logged_in?
+      current_user != nil
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

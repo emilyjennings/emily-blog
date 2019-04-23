@@ -1,32 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div class="noticemessage"><%= notice %></div>
 
-<h1>Posts</h1>
+<h3 class="blogsubtitle">Emily's blog</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Created</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<h1 class="blogtitle">A Story of A Non Traditional Career Path</h1>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.created %></td>
-        <td><%= post.content %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <% @posts.each do |post| %>
+      <div class="blocktitle2"><%= post.title %></div>
+      <h1 id="created"><%= post.created %></h1>
+      <p><%= post.content %></p>
+      <div class="postlinks">
+        <div class="actionscontainer">
+          <div class="actions"><%= link_to 'Show', post %></div>
+          <div class="actions"><%= link_to 'Edit', edit_post_path(post) %></div>
+          <div class="actions"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        </div>
+      </div>
+  <% end %>
 
-<br>
+<div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>
+<div class="top">
+  <button id="top">&#8593;</button>
+</div>
 
-<%= link_to 'New Post', new_post_path %>
-<%= link_to "Log out", logout_path, method: :delete %>
+<button id="hamburger">&#9776;</button>

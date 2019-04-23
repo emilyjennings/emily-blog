@@ -13,7 +13,10 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require jquery
+
+
+//nav menu animation
 
 $(".nav").hide();
 $("#hamburger").click(function(){
@@ -33,5 +36,24 @@ $("#cross").click(function(event){
       $("#cross").hide();
       $("#hamburger").show();
     });
+  }
+});
+
+//scroll to top effect
+
+$("#top").click(function(event){
+  $.scrollTo(0, 1000);
+});
+
+$(window).scroll(function(){
+  var scrollTop = $(window).scrollTop()
+  if (scrollTop > 150) {
+    $('#top').animate({
+      opacity: '0.75',
+    }, 700);
+  } else if (scrollTop < 150){
+    $('#top').animate({
+      opacity: '0.0',
+    }, 200);
   }
 });
