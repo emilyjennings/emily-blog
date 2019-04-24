@@ -1,20 +1,27 @@
 <div class="noticemessage"><%= notice %></div>
 
-<h3 class="blogsubtitle">Emily's blog</h3>
+<h3 class="blogsubtitle">Emily in the wild</h3>
 
-<h1 class="blogtitle">Non-Traditionally</h1>
+<h1 class="blogtitle">Traditional is Boring</h1>
 
+<hr></hr>
+
+<div class="allposts">
   <% @posts.each do |post| %>
-      <div class="blocktitle2"><%= post.title %></div>
-      <h1 id="created"><%= post.created %></h1>
+    <div class="postcard">
+      <div class="post-title"><%= post.title %></div>
+      <div class="created"><%= post.created %></div>
       <p><%= post.content %></p>
       <div class="actionscontainer">
-        <div class="actions"><%= link_to 'Show', post %></div>
+        <div class="actions"><%= link_to 'Read', post %></div>
+        <div class="actions"><%= link_to 'Comments', comments_path(post) %></div>
         <div class="actions"><%= link_to 'Edit', edit_post_path(post) %></div>
-        <div class="actions"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <div class="actions"><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
       </div>
+    </div>
 
   <% end %>
+</div>
 
 <div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>
 <!-- <div class="top">

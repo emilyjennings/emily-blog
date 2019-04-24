@@ -17,6 +17,23 @@
     box-sizing: border-box;
   }
 
+
+/* the line */
+  hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2ec4f2;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2ec4f2;
+    border: 0 none;
+    margin-top: 100px;
+    margin-bottom:100px;
+    border-radius: 3px
+  }
+
   body {
     color: #2fd6d6;
     font-family: 'Bitter', serif;
@@ -27,6 +44,8 @@
     line-height: normal;
   }
 
+  /* Front Page Header stuff */
+
   .blogtitle {
     display: block;
     text-align: center;
@@ -34,7 +53,7 @@
     background-color: #23C6B3;
     opacity: 0.9;
     border-radius: 5px;
-    margin: 10px 25%;
+    margin: 40px 25%;
     padding: 30px;
     font-size: 40px;
     color: #e6f7f7;
@@ -42,43 +61,62 @@
     font-family: 'Righteous', serif
   }
 
-  h3 {
-    font-size: 30px;
-    color: #2ec4f2
+  .blogsubtitle {
+    font-size: 20px;
+    color: #2ec4f2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 20px
+  }
+
+  /*posts*/
+
+  .postcard {
+    display: inline-block;
+    float: left;
+    width: 32%;
+    margin: 1px;
+  }
+
+  .allposts {
+    width: 100%;
+    margin: 10px
   }
 
   p {
-    margin-left: 40px;
-    margin-right: 40px;
-    border: 10px solid #23C6B3;
+    display: block;
+    width: auto;
+    margin: 10px;
+    border: 5px solid #23C6B3;
     border-radius: 18px;
     background: #d1f8fc;
     font-size: 18px;
     padding: 20px;
     letter-spacing: .5px;
     color: #747E7A;
-    text-indent: 30px;
     line-height: 23px;
     font-family: 'Bitter', serif;
     overflow: none;
   }
 
-  .blocktitle2 {
-    width: 100%;
-    font-style: italic;
-    font-family: Georgia, serif;
-    font-size: 20px;
+  .post-title {
+    font-family: 'Bitter', serif;
     color: #2ec4f2;
-    margin: 100px 40px;
+    margin: 15px;
+    font-size: 20px
+  }
+
+  .created {
+    font-family: 'Bitter', serif;
+    margin: 15px;
   }
 
   .actionscontainer {
     display: block;
     text-align: center;
-    margin-left: 40px;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    padding-top: 0;
+    margin: 20px
   }
 
   .actions {
@@ -86,21 +124,24 @@
     text-align: center;
     float: left;
     font-style: italic;
-    font-family: Georgia, serif;
-    font-size: 20px;
+    font-family: 'Bitter', serif;
+    font-size: 10px;
     color: #C4EFDA;
     margin: 10px;
   }
 
  a:link, a:visited {
-   color: #35CDD1;
+   color: #2ec4f2;
    text-decoration: none;
  }
 
  a:hover, nav a:hover {
-   color: #C4EFDA;
-   background: #3B4548;
+   color: #2ec4f2;;
+   background-color: #e6f7f7;
  }
+
+
+ /* Nav menu */
 
  #hamburger {
    background-color: #e6f7f7;
@@ -111,7 +152,7 @@
    margin: 20px;
    border: 1px solid #2ec4f2;
    line-height: 2.5em;
-   font-family: monospace;
+   font-family: 'Bitter', serif;
    font-size: 20px;
    padding: 1px 13px;
    opacity: 0.8;
@@ -130,7 +171,7 @@
    border: 1px solid #2ec4f2;
    display: block;
    line-height: 2.5em;
-   font-family: monospace;
+   font-family: 'Bitter', serif;
    font-size: 16px;
    padding: 8px;
    opacity: 0.8;
@@ -162,6 +203,8 @@
    opacity: 0;
  }
 
+ /* misc and alerts*/
+
  .noticemessage {
    display: block;
    text-align: center;
@@ -169,10 +212,6 @@
    color: #C4EFDA;
    border: none;
    background-color: none
- }
-
- .aboutemilyblock a:hover {
-   color: #3B4548;
  }
 
  p.alert.alert-success {
