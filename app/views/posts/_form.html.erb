@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="titlefield">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
+  <div class="datefield">
     <%= form.label :created %>
     <%= form.text_field :created %>
   </div>
 
-  <div class="field">
+  <div class="textfield">
     <%= form.label :content %>
-    <%= form.text_field :content %>
+    <%= form.text_area :content %>
   </div>
 
-  <div class="actions">
+  <div class="submit">
     <%= form.submit %>
   </div>
 <% end %>

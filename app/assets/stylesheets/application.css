@@ -140,6 +140,17 @@
    background-color: #e6f7f7;
  }
 
+ /* forms */
+
+ .submit {
+   font-size: 20px
+
+ }
+
+ .post_content input {
+   height: 100px
+ }
+
 
  /* Nav menu */
 

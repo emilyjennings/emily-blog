@@ -15,5 +15,9 @@
   <%= @post.content %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<p><%=@post.comments.count%> comment(s)</p>
+
+<div class="actions"><%= link_to 'Edit', edit_post_path %></div>
+<div class="actions"><%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<div class="actions"><%= link_to 'Back', posts_path %></div>
+<div class="actions"><%= link_to 'Post a Comment', new_post_comment_path(@post) %></div>

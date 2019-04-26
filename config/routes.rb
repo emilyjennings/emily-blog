@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  resources :categories
-  resources :comments
   resources :users
-  resources :posts
+  resources :posts do
+    resources :comments, only: [:create, :new, :index, :destroy]
+    resources :categories, only: [:create, :new]
+  end
   root 'posts#index'
-  get   '/signup', to: 'users#new'
+  get   '/signup', to: 'user#new'
   get   '/login',   to: 'session#new'
   post   '/login',   to: 'session#create'
   delete '/logout',  to: 'session#destroy'

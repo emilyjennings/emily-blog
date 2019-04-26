@@ -14,9 +14,7 @@
       <p><%= post.content %></p>
       <div class="actionscontainer">
         <div class="actions"><%= link_to 'Read', post %></div>
-        <div class="actions"><%= link_to 'Comments', comments_path(post) %></div>
-        <div class="actions"><%= link_to 'Edit', edit_post_path(post) %></div>
-        <div class="actions"><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <div class="actions"><%= link_to (post.comments.count if post.comments), post_comments_path(post)%> Comments</div>
       </div>
     </div>
 
