@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
  * {
     box-sizing: border-box;
   }
@@ -80,6 +81,17 @@
     margin: 1px;
   }
 
+  .comments {
+    color: #23C6B3;
+    display: block;
+    text-align: center;
+    float: left;
+    font-style: italic;
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+    margin: 10px;
+  }
+
   .allposts {
     width: 100%;
     margin: 10px
@@ -101,16 +113,40 @@
     overflow: none;
   }
 
+  .showpagecontent {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border: 5px solid #23C6B3;
+    border-radius: 18px;
+    background: #d1f8fc;
+    font-size: 18px;
+    padding: 20px;
+    letter-spacing: .5px;
+    color: #747E7A;
+    line-height: 23px;
+    font-family: 'Bitter', serif;
+    overflow: none;
+  }
+
   .post-title {
     font-family: 'Bitter', serif;
     color: #2ec4f2;
     margin: 15px;
-    font-size: 20px
+    font-size: 23px
+  }
+
+  .post-comments {
+    font-family: 'Bitter', serif;
+    color: #2ec4f2;
+    margin: 30px auto;
+    font-size: 20px;
   }
 
   .created {
     font-family: 'Bitter', serif;
     margin: 15px;
+    font-size: 15px
   }
 
   .actionscontainer {
@@ -125,7 +161,7 @@
     float: left;
     font-style: italic;
     font-family: 'Bitter', serif;
-    font-size: 10px;
+    font-size: 14px;
     color: #C4EFDA;
     margin: 10px;
   }
@@ -136,9 +172,40 @@
  }
 
  a:hover, nav a:hover {
-   color: #2ec4f2;;
+   color: #2ec4f2;
    background-color: #e6f7f7;
  }
+
+ /* comments */
+
+ .commenter {
+   font-size: 20px
+ }
+
+ .comment-text {
+   margin: 20px;
+   border: 4px solid #C4EFDA;
+   border-radius: 3px;
+   padding: 4px;
+ }
+
+ .comment-wrapper {
+   display: block;
+   width: 30%;
+   margin: auto;
+ }
+
+.comment-actions {
+  font-size: 15px;
+  margin: 10px;
+  text-align: center;
+ }
+
+.commentindex {
+  font-size: 30px;
+  margin: 20px auto;
+  text-align: center;
+}
 
  /* forms */
 
@@ -225,6 +292,11 @@
    background-color: none
  }
 
+ #notice {
+   border: none;
+   background: none;
+ }
+
  p.alert.alert-success {
    text-align: center;
  }
@@ -233,4 +305,9 @@
    content: "";
    clear: both;
    display: table;
+ }
+
+ .footer {
+   width: 80%;
+   margin: auto;
  }

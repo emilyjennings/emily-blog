@@ -1,23 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<div class="blogtitle">
   <%= @post.title %>
-</p>
+</div>
 
-<p>
-  <strong>Created:</strong>
+<div class="blogsubtitle">
   <%= @post.created %>
-</p>
+</div>
 
-<p>
-  <strong>Content:</strong>
+<p class="showpagecontent">
   <%= @post.content %>
 </p>
 
-<p><%=@post.comments.count%> comment(s)</p>
+<div class="footer">
 
-<div class="actions"><%= link_to 'Edit', edit_post_path %></div>
-<div class="actions"><%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-<div class="actions"><%= link_to 'Back', posts_path %></div>
-<div class="actions"><%= link_to 'Post a Comment', new_post_comment_path(@post) %></div>
+  <div class="post-comments">
+    <%= link_to @post.comments.count, post_comments_path(@post)%> <%= link_to 'comment(s)', post_comments_path(@post)%>
+  </div>
+
+  <div class="actions"><%= link_to 'Edit', edit_post_path %></div>
+  <div class="actions"><%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  <div class="actions"><%= link_to 'Back', posts_path %></div>
+  <div class="actions"><%= link_to 'Post a Comment', new_post_comment_path(@post) %></div>
+
+</div>

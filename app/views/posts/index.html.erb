@@ -13,8 +13,8 @@
       <div class="created"><%= post.created %></div>
       <p><%= post.content %></p>
       <div class="actionscontainer">
-        <div class="actions"><%= link_to 'Read', post %></div>
-        <div class="actions"><%= link_to (post.comments.count if post.comments), post_comments_path(post)%> Comments</div>
+        <div class="actions"><%= link_to 'Read More', post %></div>
+        <div class="comments"><%=post.comments.count if post.comments%> Comment(s)</div>
       </div>
     </div>
 
