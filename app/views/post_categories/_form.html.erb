@@ -1,0 +1,16 @@
+<%= form_with(model: post_category, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :post_id %>
+    <%= form.number_field :post_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category_id %>
+    <%= form.number_field :category_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
