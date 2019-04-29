@@ -24,7 +24,9 @@
   <div class="textfield">
     <%= form.label :content %>
     <%= form.text_area :content %>
-  </div>
+  </div
+
+  <%= form.category_select :category_id, Category.all, :id, :title%>
 
   <div class="submit">
     <%= form.submit %>
