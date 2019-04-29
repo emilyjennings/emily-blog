@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :post_categories
+  resources :categories
   resources :users
   resources :posts do
     resources :comments, only: [:create, :new, :index, :destroy]
