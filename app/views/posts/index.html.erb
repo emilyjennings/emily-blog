@@ -11,7 +11,7 @@
     <div class="postcard">
       <div class="post-title"><%= post.title %></div>
       <div class="created"><%= post.created %></div>
-      <p><%= post.content %></p>
+      <p id="pdots"><%= post.content %></p>
       <div class="actionscontainer">
         <div class="actions"><%= link_to 'Read More', post %></div>
         <div class="comments"><%=post.comments.count if post.comments%> Comment(s)</div>

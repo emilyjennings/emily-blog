@@ -113,6 +113,16 @@
     overflow: none;
   }
 
+  p#pdots {
+    background: #C4EFDA;
+    background-image:
+      radial-gradient(#35CDD1 6%, transparent 0),
+      radial-gradient(#35CDD1 6%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
+
+  }
+
   .showpagecontent {
     display: block;
     width: 80%;

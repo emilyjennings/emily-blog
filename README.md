@@ -2,6 +2,11 @@
 
 This project was made for the purpose of housing my own blog. Since I learned Ruby, the most obvious use case for me is a blog. I wanted visitors to be able to visit my website and be linked to my blog, and I knew I could build such a thing, so I did.
 
+Users will be able to view my posts, which I can post by logging in. They can post comments and filter by categories (soon).
+
+4/28 note:
+I am having trouble creating seeds and deploying to heroku.
+
 ## Design planning 4/23/19:
 
 The user sees a large blog title and a smaller subtitle above it. below will be links - about tags dates homepage
