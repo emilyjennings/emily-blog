@@ -18,7 +18,7 @@ class SessionController < ApplicationController
 
   def destroy
     session.clear
-    redirect_to logout_path
+    render :destroy
   end
 
 end
