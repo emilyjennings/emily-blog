@@ -1,8 +1,8 @@
 <div class="noticemessage"><%= notice %></div>
 
-<h3 class="blogsubtitle">Emily in the wild</h3>
+<h3 class="blogsubtitle">Emily's Blog</h3>
 
-<h1 class="blogtitle">Traditional is Boring</h1>
+<h1 class="blogtitle">Making the most of Life</h1>
 
 <hr></hr>
 
@@ -21,9 +21,9 @@
   <% end %>
 </div>
 
-<div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>
-<!-- <div class="top">
-  <button id="top">&#8593;</button>
-</div> -->
+<% if @user != nil %>
 
-<button id="hamburger">&#9776;</button>
+  <button id="hamburger">&#9776;</button>
+  <div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>
+
+<%end%>
