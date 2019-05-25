@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-
   def log_in(user)
     session[:id] = user.id
   end
@@ -14,4 +13,6 @@ class ApplicationController < ActionController::Base
   def logged_in?
     current_user != nil
   end
+
+
 end

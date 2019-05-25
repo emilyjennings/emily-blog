@@ -4,7 +4,13 @@ This project was made for the purpose of housing my own blog. Since I learned Ru
 
 Users will be able to view my posts, which I can post by logging in. They can post comments and filter by categories (soon).
 
-4/28 note:
+### 5.23 notes:
+
+I did some styling and figured out how to get markdown in my blog posts using a gem called redcarpet.
+
+The heroku problem before turned out to just be me not realizing that I was successfully logging in and out since I didn't ahve the logout action set up correctly.
+
+## 4.28 note:
 I am having trouble creating seeds and deploying to heroku.
 
 ## Design planning 4/23/19:

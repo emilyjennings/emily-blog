@@ -4,23 +4,41 @@
   <%= @post.title %>
 </div>
 
+<div class="blogsubtitle" id="creator">
+    by <%= @post.user.name %>
+</div>
 <div class="blogsubtitle">
-  <%= @post.created %>
+    <%= @post.created %>
 </div>
 
 <p class="showpagecontent">
   <%= @post.content %>
 </p>
 
+
+
 <div class="footer">
 
-  <div class="post-comments">
-    <%= link_to @post.comments.count, post_comments_path(@post)%> <%= link_to 'comment(s)', post_comments_path(@post)%>
+<% if @user != nil %>
+  <div className="actions-show-box">
+    <div class="actions_show"><%= link_to 'Edit', edit_post_path %></div>
+    <div class="actions_show"><%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<%end%>
+    <div class="actions_show"><%= link_to 'Back to Posts', posts_path %></div>
+    <div class="actions_show"><%= link_to 'Post a Comment', new_post_comment_path(@post) %></div>
   </div>
 
-  <div class="actions"><%= link_to 'Edit', edit_post_path %></div>
-  <div class="actions"><%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-  <div class="actions"><%= link_to 'Back', posts_path %></div>
-  <div class="actions"><%= link_to 'Post a Comment', new_post_comment_path(@post) %></div>
+
+  <br></br>
+  <div class="post-comments">
+    <%= link_to @post.comments.count, post_comments_path(@post)%> <%= link_to 'comment(s):', post_comments_path(@post)%>
+  </div>
+
+  <% @post.comments.each do |comment| %>
+    <div class="comment-wrapper">
+      <div class="commenter">Posted by: <%= comment.name %></div>
+      <div class="comment-text"><%= comment.content %></div>
+    </div>
+  <% end %>
 
 </div>

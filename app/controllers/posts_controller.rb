@@ -1,4 +1,4 @@
-
+require 'redcarpet'
 
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
@@ -8,6 +8,9 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
     @user = current_user
+    renderer = Redcarpet::Render::HTML.new(no_links: true, hard_wrap: true, filter_html: true, fenced_code_blocks: true  )
+    markdown = Redcarpet::Markdown.new(renderer, extensions = {})
+    # @post = markdown.render().html_safe
   end
 
   # GET /posts/1
