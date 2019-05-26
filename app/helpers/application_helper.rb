@@ -18,4 +18,10 @@ module ApplicationHelper
   #markdown helper
 
   markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+  def postcontent(content)
+    renderer = Redcarpet::Render::HTML.new(fenced_code_blocks: true, autolink: true, quote: true)
+    markdown = Redcarpet::Markdown.new(renderer, extensions = {})
+    markdown.render(content).html_safe
+  end
+
 end
