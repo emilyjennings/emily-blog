@@ -19,7 +19,7 @@
 
 <div class="footer">
 
-<% if @user != nil %>
+<% if current_user.name == "Emily" %>
   <div className="actions-show-box">
     <div class="actions_show"><%= link_to 'Edit', edit_post_path %></div>
     <div class="actions_show"><%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
@@ -42,3 +42,10 @@
   <% end %>
 
 </div>
+
+<% if current_user.name == "Emily" %>
+
+  <button id="hamburger">&#9776;</button>
+  <div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>
+
+<%end%>
