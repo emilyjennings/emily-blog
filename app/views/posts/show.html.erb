@@ -19,10 +19,12 @@
 
 <div class="footer">
 
-<% if current_user.name == "Emily" %>
-  <div className="actions-show-box">
+<% if current_user %>
+  <% if current_user.name == "Emily" %>
+    <div className="actions-show-box">
     <div class="actions_show"><%= link_to 'Edit', edit_post_path %></div>
     <div class="actions_show"><%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  <%end%>
 <%end%>
     <div class="actions_show"><%= link_to 'Back to Posts', posts_path %></div>
     <div class="actions_show"><%= link_to 'Post a Comment', new_post_comment_path(@post) %></div>
@@ -43,9 +45,6 @@
 
 </div>
 
-<% if current_user.name == "Emily" %>
 
-  <button id="hamburger">&#9776;</button>
-  <div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>
-
-<%end%>
+<button id="hamburger">&#9776;</button>
+<div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>

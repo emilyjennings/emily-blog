@@ -8,6 +8,7 @@ class SessionController < ApplicationController
     user = User.find_by(name: params[:session][:name])
 
     if user && user.authenticate(params[:session][:password])
+      flash[:notice] = "Welcome back"
       log_in(user)
       redirect_to user_path(session[:id])
     else

@@ -11,21 +11,19 @@
     <div class="postcard">
       <div class="post-title"><%= post.title %></div>
       <div class="created"><%= post.created %></div>
-      <%= postcontent(post.content) %>
+      <%=link_to(post) do %>
+        <%= postcontent(post.content) %>
+      <%end%>
       <div class="actionscontainer">
-        <div class="actions"><%= link_to 'Read More', post %></div>
+        <div class="actions"><%= link_to 'Read More...', post %></div>
         <div class="comments"><%= link_to post.comments.count, post_comments_path(post)%> <%= link_to 'comment(s)', post_comments_path(post)%></div>
       </div>
     </div>
 
   <% end %>
-  <%=@post %>
 
 </div>
 
-<% if @user != nil %>
 
-  <button id="hamburger">&#9776;</button>
-  <div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>
-
-<%end%>
+<button id="hamburger">&#9776;</button>
+<div class="nav"><%= render 'navlinks'%><a href="" id="cross">&#735;</a></div>

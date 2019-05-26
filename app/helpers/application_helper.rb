@@ -15,8 +15,7 @@ module ApplicationHelper
     current_user != nil
   end
 
-  #markdown helper
-
+  #markdown helper - this allows posts to have markdown capability
   markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
   def postcontent(content)
     renderer = Redcarpet::Render::HTML.new(fenced_code_blocks: true, autolink: true, quote: true)
