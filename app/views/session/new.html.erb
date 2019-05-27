@@ -1,6 +1,6 @@
 <h1>Log In!</h1>
 
-<% if current_user.name == "Emily"%>
+
   <% if flash[:notice] %>
     <div class="notice"><%= flash[:notice] %></div>
   <% end %>
@@ -17,4 +17,3 @@
   <br>
 
   <p>New user? <%= link_to "Sign up now!", new_user_path %></p>
-<%end%>

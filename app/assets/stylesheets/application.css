@@ -74,13 +74,17 @@
   .postcard {
     display: inline-block;
     float: left;
-    width: 32%;
-    margin: 1px;
+    width: 33.33%;
+    height: 300px;
+    margin-bottom: 10px
+  }
+
+  .post-col {
+    height: 300px
   }
 
   .allposts {
     width: 100%;
-    margin: 10px
   }
 
   p {
@@ -96,11 +100,6 @@
     line-height: 1.2em;
     font-family: 'Bitter', serif;
     width: auto;
-    clear: both;
-  }
-
-  .post-col {
-    width: 100%;
     clear: both;
   }
 
