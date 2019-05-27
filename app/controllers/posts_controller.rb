@@ -1,4 +1,5 @@
 require 'redcarpet'
+require 'pry'
 
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
@@ -34,13 +35,14 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user_id = current_user.id
+    @post.category_id = params[:post][:category_id].to_i
 
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
-        format.html { render :new }
+        format.html { render :new, notice: 'Didnt work' }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end

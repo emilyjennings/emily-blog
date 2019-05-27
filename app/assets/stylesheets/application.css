@@ -113,6 +113,17 @@
 
   }
 
+  p a:hover {
+    background: none;
+    color: #23C6B3
+  }
+
+  p#smaller {
+    width: 30%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
   .post-title {
     font-family: 'Bitter', serif;
     color: #2ec4f2;
@@ -173,7 +184,7 @@
 
  a:hover, nav a:hover {
    color: #2ec4f2;
-   background-color: #e6f7f7;
+   background-color: none;
  }
 
  #creator {

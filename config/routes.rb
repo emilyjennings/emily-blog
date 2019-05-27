@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  resources :post_categories
-  resources :categories
+  resources :categories do
+    resources :posts, only: [:show, :index]
+  end
   resources :users
   resources :posts do
     resources :comments, only: [:create, :new, :index, :destroy]
-    resources :categories, only: [:create, :new]
+    resources :categories, only: [:index, :show]
   end
   root 'posts#index'
   get   '/signup', to: 'user#new'

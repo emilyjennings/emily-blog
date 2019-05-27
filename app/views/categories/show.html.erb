@@ -1,1 +1,11 @@
-<%=@category%>
+<h1>Categories > <%=@category.title%></h1>
+
+<h1 class="blogtitle">Posts</h1>
+
+<%if @category.posts.empty?%>
+  <h2 class="blogsubtitle"> No Posts in this category yet.</h2>
+<%else%>
+  <%@category.posts.each do |c|%>
+    <p id="smaller"><%=link_to c.title, post_path(c)%></p>
+  <%end%>
+<%end%>
