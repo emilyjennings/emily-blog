@@ -5,3 +5,11 @@
     <p id="smaller"><%=link_to cat.title , category_path(cat)%> (<%=cat.posts.count%>)</p>
 
 <% end %>
+
+<button id="hamburger">&#9776;</button>
+<div class="nav"><%= render 'posts/navlinks'%><a href="" id="cross">&#735;</a></div>
+
+
+<div class="top">
+  <button id="top">&#8593;</button>
+</div>

@@ -18,6 +18,10 @@
     box-sizing: border-box;
   }
 
+  a:hover {
+    background: none;
+  }
+
 
 /* the line */
   hr {
@@ -30,6 +34,7 @@
     border: 0 none;
     border-radius: 3px;
     margin: 70px auto;
+
   }
 
   body {
@@ -45,7 +50,6 @@
   /* Front Page Header stuff */
 
   .blogtitle {
-    display: block;
     text-align: center;
     width: 50%;
     background-color: #23C6B3;
@@ -56,7 +60,6 @@
     font-size: 40px;
     color: #e6f7f7;
     line-height: normal;
-    font-family: 'Righteous', serif
   }
 
   .blogsubtitle {
@@ -66,7 +69,7 @@
     width: 100%;
     display: block;
     margin: auto;
-    padding: 20px
+    padding: 20px;
   }
 
   /*Posts and show pages*/
@@ -90,8 +93,6 @@
   p {
     display: block;
     margin: 10px 10px 0 10px;
-    border: 5px solid #23C6B3;
-    border-radius: 18px;
     background: #d1f8fc;
     font-size: 18px;
     padding: 20px;
@@ -101,6 +102,7 @@
     font-family: 'Bitter', serif;
     width: auto;
     clear: both;
+    border-radius: 12px;
   }
 
   p:hover {
@@ -110,7 +112,8 @@
       radial-gradient(#35CDD1 6%, transparent 0);
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
-
+    border: 3px solid #23C6B3;
+    padding: 17px;
   }
 
   p a:hover {
@@ -118,10 +121,20 @@
     color: #23C6B3
   }
 
+  p.post-box a {
+    color: #747E7A;
+  }
+
   p#smaller {
     width: 30%;
     text-align: center;
     margin: 10px auto;
+  }
+
+  .code {
+    width: 50%;
+    margin: 10px auto;
+    font-size: 2em
   }
 
   .post-title {
@@ -165,7 +178,7 @@
   }
 
   .actions a:hover, .comments a:hover {
-    color: #2fd6d6
+    color: #23C6B3
   }
 
   .actions_show {
@@ -237,8 +250,8 @@
  /* forms */
 
  .submit {
-   font-size: 20px
-
+   font-size: 40px;
+   text-align: center;
  }
 
  .post_content input {

@@ -12,9 +12,10 @@
     <div class="postcard">
       <div class="post-title"><%= post.title %></div>
       <div class="created"><%= post.created %></div>
-      <%=link_to(post) do %>
-        <%= postcontent(post.content.truncate(135)) %>
-      <%end%>
+        <%=link_to(post) do %>
+          <%= postcontent(post.content.truncate(160)) %>
+        <%end%>
+
       <div class="actionscontainer">
         <div class="actions"><%= link_to 'Read More...', post %></div>
         <div class="comments"><%= link_to post.comments.count, post_comments_path(post)%> <%= link_to 'comment(s)', post_comments_path(post)%></div>
