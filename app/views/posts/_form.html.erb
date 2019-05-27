@@ -31,9 +31,9 @@
      <%= form.collection_radio_buttons :category_id, Category.all, :id, :title%>
   </div
 <br></br>
-  <%if current_user.name == "Emily"%>
+
     <div class="submit">
       <%= form.submit %>
     </div>
-  <%end%>
+
 <% end %>
