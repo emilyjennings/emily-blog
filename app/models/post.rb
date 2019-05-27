@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
   belongs_to :user
   has_many :comments
-  has_many :categories, through: :post_categories
+  belongs_to :category
 end
