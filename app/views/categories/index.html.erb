@@ -1,6 +1,6 @@
 <h1>Categories</h1>
 
-<% @category.each do |cat| %>
+<% @categories.each do |cat| %>
 
     <p id="smaller"><%=link_to cat.title , category_path(cat)%> (<%=cat.posts.count%>)</p>
 

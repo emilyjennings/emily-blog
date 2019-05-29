@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :categories do
     resources :posts, only: [:show, :index]
   end
+  resources :categories
   resources :users
   resources :posts do
     resources :comments, only: [:create, :new, :index, :destroy]
