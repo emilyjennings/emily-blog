@@ -131,6 +131,10 @@
     margin: 10px auto;
   }
 
+  p.post-preview a {
+    color: #747E7A;
+  }
+
   .code {
     width: 50%;
     margin: 10px auto;
