@@ -385,10 +385,10 @@
    font-size: 1.2em
  }
 
- @media all and (max-width: 450px) {
+ @media all and (max-width: 500px) {
    .postcard {
      display: block;
-     width: 90%;
+     width: 100%;
      margin: auto;
    }
  }
