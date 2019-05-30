@@ -384,3 +384,11 @@
    height: 500px;
    font-size: 1.2em
  }
+
+ @media all and (max-width: 450px) {
+   .postcard {
+     display: block;
+     width: 90%;
+     margin: auto;
+   }
+ }
