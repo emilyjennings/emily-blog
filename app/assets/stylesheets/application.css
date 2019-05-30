@@ -389,6 +389,10 @@
    .postcard {
      display: block;
      width: 100%;
-     margin: auto;
+     margin: 20px auto;
+   }
+
+   .blogtitle {
+     width: 80%
    }
  }
