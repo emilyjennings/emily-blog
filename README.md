@@ -4,6 +4,10 @@ This project was made for the purpose of housing my own blog. Since I learned Ru
 
 Users will be able to view my posts, which I can post by logging in. They can post comments and filter by categories (soon).
 
+### 5.30 notes:
+
+So, updates: I created categories for my posts which worked great locally. On Heroku, it just doesn't work. I tried reading all the logs and looking at different documentation about it but yet to have found a solution, so for now categories won't be a thing in this blog. Sad. But I have faith it will eventually work if I keep at it.
+
 ### 5.26 notes:
 
 I used the redcarpet gem to get markdown in my blog posts and this seems almost ready to use.

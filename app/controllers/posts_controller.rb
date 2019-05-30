@@ -34,7 +34,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user_id = current_user.id
-    @post.category_id = params[:post][:category_id].to_i
+    # @post.category_id = params[:post][:category_id].to_i
 
     respond_to do |format|
       if @post.save
