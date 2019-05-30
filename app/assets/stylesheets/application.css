@@ -191,13 +191,13 @@
   }
 
   .actions_show {
-    margin: auto;
+    margin: 15px;
   }
 
   .actions-show-box a {
     display: inline-block;
-
   }
+
 
  a:link, a:visited {
    color: #2ec4f2;
@@ -369,7 +369,7 @@
  }
 
  .footer {
-   width: 80%;
+   width: 50%;
    margin: auto;
  }
 
