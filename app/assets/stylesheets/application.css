@@ -131,8 +131,12 @@
     margin: 10px auto;
   }
 
-  p.post-preview a {
+  p.post-preview a:link {
     color: #747E7A;
+  }
+
+  .show_post {
+    width: 60%
   }
 
   .code {
