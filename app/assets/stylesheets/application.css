@@ -103,6 +103,7 @@
     width: auto;
     clear: both;
     border-radius: 12px;
+    line-height: 1.3em
   }
 
   p:hover {
@@ -136,14 +137,8 @@
   }
 
   .show_post {
-    width: 60%;
+    width: 70%;
     margin: auto;
-  }
-
-  .code {
-    width: 50%;
-    margin: 10px auto;
-    font-size: 2em
   }
 
   .post-title {
@@ -375,10 +370,14 @@
 
  pre {
    background-color: black;
+   overflow: scroll;
+   width: 90%;
+   margin: 10px auto;
  }
 
  code {
-   font-size: 1.7em
+   font-size: 1.5em;
+   line-height: 1.2em;
  }
 
 /*new post form*/
@@ -401,7 +400,24 @@
    }
 
    .blogtitle {
-     width: 80%;
-     margin: 40px 10%
+     width: 90%;
+     margin: 40px 5%
+   }
+
+   p {
+     font-size: 1.3em
+   }
+
+   pre {
+     font-size: 0.8em
+   }
+
+   .show_post {
+     width: 88%
+   }
+
+   .footer {
+     width: 100%;
+
    }
  }
