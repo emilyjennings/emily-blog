@@ -7,7 +7,7 @@
 <hr></hr>
 
 <div class="allposts">
-  <% @posts.each do |post| %>
+  <% @posts.sort{ |a,b| b <=> a}.each do |post| %>
 
     <div class="postcard">
       <div class="post-title"><%= post.title %></div>
