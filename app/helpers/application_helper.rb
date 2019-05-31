@@ -23,4 +23,12 @@ module ApplicationHelper
     markdown.render(content).html_safe
   end
 
+  def block_code(code, lang)
+    %(<pre><code class="block-code">#{code}</code></pre>)
+  end
+
+  def codespan(code)
+    %(<code class="inline-code">#{code}</code>)
+  end
+
 end

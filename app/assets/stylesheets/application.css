@@ -373,6 +373,14 @@
    margin: auto;
  }
 
+ pre {
+   background-color: black;
+ }
+
+ code {
+   font-size: 1.7em
+ }
+
 /*new post form*/
 
  .post-body {
