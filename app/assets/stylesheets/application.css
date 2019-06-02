@@ -154,7 +154,7 @@
     color: #2ec4f2;
     margin: 50px auto;
     font-size: 20px;
-    width: 70%
+    width: 80%
   }
 
   .created {
@@ -215,7 +215,7 @@
  }
 
  .comment-text {
-   margin: 20px;
+   margin: 20px 0;
    border: 4px solid #23C6B3;
    border-radius: 5px;
    padding: 10px;
@@ -226,7 +226,8 @@
      radial-gradient(#23C6B3 4%, transparent 0);
    background-size: 30px 30px;
    background-position: 0 0, 15px 15px;
-   color: #747E7A
+   color: #747E7A;
+   word-wrap: break-word;
  }
 
  .comment-text:hover {
@@ -235,7 +236,7 @@
 
  .comment-wrapper {
    display: block;
-   width: 50%;
+   width: 80%;
    margin: auto;
  }
 
@@ -419,5 +420,16 @@
    .footer {
      width: 100%;
 
+   }
+
+   .comment-wrapper {
+     width: 90%;
+     font-size: 14px
+   }
+
+   .post-comments {
+     margin: 70px 10px 40px 10px;
+     clear: both;
+     width: 90%
    }
  }
