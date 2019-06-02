@@ -374,11 +374,12 @@
    overflow: scroll;
    width: 90%;
    margin: 10px auto;
+   font-size: 1.3em
  }
 
  code {
    background-color: black;
-   color: #2fd6d6
+   color: #2fd6d6;
  }
 
 /*new post form*/
