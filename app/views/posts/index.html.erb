@@ -7,7 +7,7 @@
 <hr></hr>
 
 <div class="allposts">
-  <% @posts.sort_by{|post| post.created}.each do |post| %>
+  <% @posts.sort_by{|post| post.created }.reverse.each do |post| %>
 
     <div class="postcard">
       <div class="post-title"><%= post.title %></div>
