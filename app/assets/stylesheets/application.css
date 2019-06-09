@@ -394,6 +394,30 @@
    font-size: 1.2em
  }
 
+ label {
+   font-size: 20px
+ }
+
+ textarea#comment_content {
+   height: 100px;
+   width: 200px;
+   background-color: #C4EFDA;
+  color: #2fd6d6;
+  border-radius: 5px
+ }
+
+ input {
+   font-size: 30px;
+   background-color: #C4EFDA;
+   color: #2fd6d6;
+   border-radius: 5px;
+   border: 1px solid #2fd6d6;
+ }
+
+ .comment_form_page {
+   text-align: center
+ }
+
  @media all and (max-width: 600px) {
    .postcard {
      display: block;
