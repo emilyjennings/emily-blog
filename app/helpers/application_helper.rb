@@ -32,8 +32,9 @@ module ApplicationHelper
   end
 
   def convert_date(date)
-    new_date = date.split("-")
-    day = new_date[2].split('')[0] == '0' ? new_date[2].split('')[1] : new_date[2]
+    if date.include?("-")
+      new_date = date.split("-")
+      day = new_date[2].split("")[0] == '0' ? new_date[2].split("")[1] : new_date[2]
       if new_date[1] == '01'
         "January #{day}, #{new_date[0]}"
       elsif new_date[1] == '02'
@@ -59,6 +60,7 @@ module ApplicationHelper
       elsif new_date[1] == '12'
         "December #{day}, #{new_date[0]}"
       end
+    end
   end
 
 end
