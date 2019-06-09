@@ -418,11 +418,21 @@
    text-align: center
  }
 
+ @media all and (max-width: 870px) {
+   .postcard {
+     display: block;
+     width: 100%;
+     margin: 20px auto;
+     height: 200px
+   }
+ }
+
  @media all and (max-width: 600px) {
    .postcard {
      display: block;
      width: 100%;
      margin: 20px auto;
+     height: 330px
    }
 
    .blogtitle {
