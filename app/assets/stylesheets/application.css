@@ -402,8 +402,9 @@
    height: 100px;
    width: 200px;
    background-color: #C4EFDA;
-  color: #2fd6d6;
-  border-radius: 5px
+  color: ##2ec4f2;
+  border-radius: 5px;
+  font-size: 15px;
  }
 
  input {
